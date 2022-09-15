@@ -195,6 +195,12 @@ section .rate{
     color: #333;
 }
 
+
+section .rate h2,
+section .rate h3{
+    margin-top: 1rem;
+}
+
 section .rate .calc{
     margin-top: 1rem;
     margin: auto;
@@ -205,9 +211,15 @@ section .rate .calc{
     width: 100%;
 }
 
+section .rate .calc p{
+    font-size: 1.5rem;
+}
+
 section .rate .calc input{
-    width: 2rem;
+    width: 3rem;
+    padding: 0.5rem;
     margin: 0 0.5rem;
+    font-size: 1rem;
 }
 
 section .rate .calc button{
@@ -216,6 +228,7 @@ section .rate .calc button{
     border-radius: 3px;
     background-color: aquamarine;
     color: #444;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
