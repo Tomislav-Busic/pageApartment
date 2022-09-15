@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:  sans-serif;
+}
+
+body {
+    background-color: #fefefe;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+header,
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: aquamarine;
+    color: #555;
+    height: 3rem;
+    padding: 0.5rem;
+}
+
+header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+footer {
+    bottom: 0;
+}
+
+footer > div {
+    text-align: center;
+}
+
+.logo {
+    position: fixed;
+    right: 2rem;
+    top: 4rem;
+    cursor: pointer;
+}
+
+.logo > img{
+    height: 2rem;
+    width: 2rem;
+}
+
+section{
+    padding: 5rem;
+    width: 100%;
+    max-width: 1500px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h1,
+section > h2,
+section .description > h2,
+section > h3{
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+section > h1{
+    font-size: 3rem;
+}
+
+section img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+section .logologo{
+    height: 2rem;
+    width: 2rem;
+    margin-top: -1rem;
+    cursor: pointer;
+}
+
+section .info{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section .info ul{
+    padding: 4rem;
+    margin: 2rem 0.5rem;
+    list-style: none;
+    border: 1px solid aquamarine;
+    border-radius: 0.5rem;
+}
+
+section .info ul > li{
+    margin-top: 0.3rem;
+}
+
+section .info ul > li > p{
+    font-size: 1.3rem;
+}
+
+section .description{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+section .description p{
+    padding: 0 2rem;
+    text-align: center;
+}
+
+section .description button{
+    margin: 1rem 0;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: aquamarine;
+    color: #444;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+section .slider{
+    padding: 5rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+section .slider .images {
+	height: 100%;
+}
+
+section .slider .images img {
+	width: 100%;
+	height: 30rem;
+	object-fit: cover;
+    display: none;
+}
+
+section .slider .images img:first-child {
+	display: block;
+}
+
+section .slider .buttons {
+    margin-top: 1rem;
+}
+
+section .slider .buttons button {
+    margin: 0 1rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: aquamarine;
+    color: #444;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+section .rate{
+    padding: 4rem 0.5rem;
+    margin-top: 3rem;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+section .rate .calc{
+    margin-top: 1rem;
+    margin: auto;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section .rate .calc input{
+    width: 2rem;
+    margin: 0 0.5rem;
+}
+
+section .rate .calc button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: aquamarine;
+    color: #444;
+    cursor: pointer;
+}
+
+
+
+/*Responsive*/
+@media (max-width: 900px) {
+    section{
+        padding: 3.5rem 2rem;
+    }
+    section > h1{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    section > h2{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    section > h3{
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+    }
+    section .info ul{
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    section .info ul > li > p,
+    section .description p{
+        font-size: 1rem;
+    }
+    section .slider{
+        padding: 3.5rem;
+        margin-top: 3rem;
+    }  
+    section .slider .images img{
+        height: 20rem;
+    }  
+}
+
+@media (max-width: 600px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+    section{
+        padding: 4rem 0.3rem;
+    }
+    section > h1{
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    section > h2{
+        font-size: 1rem;
+    }
+    section > h3{
+        font-size: 0.8rem;
+    }
+    .logo {
+        right: 1rem;
+    } 
+    .logo > img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    section .logologo{
+        height: 2rem;
+        width: 2rem;
+        margin-top: -0.5rem;
+    }
+    section .info ul{
+        padding: 2rem;
+        margin-top: 0.5rem;
+    }
+    section .info ul > li > p,
+    section .description p{
+        font-size: 0.9rem;
+    }
+    section .slider{
+        padding: 2.5rem 0.5rem;
+        margin-top: 2rem;
+    } 
+    section .slider .images img{
+        height: 15rem;
+    } 
+}
